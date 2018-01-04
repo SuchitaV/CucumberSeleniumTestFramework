@@ -1,0 +1,87 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "verify fields on homepage",
+        "description": "",
+        "id": "testing-if-all-the-fields-are-appeared-on-home-page;verify-fields-on-homepage",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 106104105416,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on Google homepage",
+            "match": {
+              "location": "GoogleStepDef.i_am_on_Google_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 992949167,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I should verify links below",
+            "match": {
+              "location": "GoogleStepDef.i_should_verify_links_below(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "linkSelector",
+                  "linkText"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "//*[@id\u003d\"gbw\"]/div/div/div[1]/div[1]/a",
+                  "Gmail"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "//*[@id\u003d\"gbw\"]/div/div/div[1]/div[2]/a",
+                  "Images"
+                ],
+                "line": 8
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 158386314,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I verify Google search \"#lst-ib\"field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "#lst-ib",
+                  "offset": 24
+                }
+              ],
+              "location": "GoogleStepDef.i_verify_field(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "testing if all the fields are appeared on home page",
+    "description": "",
+    "id": "testing-if-all-the-fields-are-appeared-on-home-page",
+    "keyword": "Feature",
+    "uri": "googlePageContent.feature"
+  }
+]
